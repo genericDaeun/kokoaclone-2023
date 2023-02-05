@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- link :css 엔터치면 윗줄 자동생성 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - Kokoa Talk</title>
+</head>
+<!-- 최상단 상태바 -->
+<body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div> 
+    </div>
+
+<!-- screen header -->
+<header class="screen-header">
+    <h1 class="screen-header__title">More</h1>
+    <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><a href="setting.html"><i class="fas fa-cog fa-lg"></i></a></span>
+    </div>
+</header>
+
+
+<!-- user component : 유저 사진, 이름 , 그 외 서브텍스트 -->
+<main class="main-screen more-screen">
+    <div class="user-component">
+        .user-component__column*2 (단축키)
+        <div class="user-component__column">
+            <img src="#" class="user-component__avatar user-component__avatar--xl" />
+            <div class="user-component__text">
+                <h4 class="user-component__title">Nicolas</h4>
+                <h6 class="user-component__subtitle">010-2222-2222</h6>
+            </div>
+        </div>
+        <div class="user-component__column">
+            <i class="far fa-comment-alt fa-2x"></i>
+        </div>
+    </div>
+    <div class="icon-row">
+        <!-- .find-icons__icon*4>span -->
+        <div class="icon-row__icon">
+            <i class="fas fa-calender"></i>
+            <span>Calender</span>
+        </div>
+        <div class="icon-row__icon">
+            <i class="far fa-smile-beam"></i>
+            <span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+            <i class="fas fa-paint-roller"></i>
+            <span>Themes</span>
+        </div>
+        <div class="icon-row__icon">
+            <i class="far fa-file-invoice-dollar"></i>
+            <span>Account</span>
+        </div>
+    </div>
+    <div class="more-suggestions">
+        <h4 class="more-suggestions__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+            <div class="more-suggestions__icon">
+                <div class="more-suggestions__icon-image">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <span class="more-suggestions__icon-text">Kakao story</span>
+            </div>
+            <div class="more-suggestions__icon">
+                <div class="more-suggestions__icon-image">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <span class="more-suggestions__icon-text">Kakao story</span>
+            </div>
+            <div class="more-suggestions__icon">
+                <div class="more-suggestions__icon-image">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <span class="more-suggestions__icon-text">Kakao story</span>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!-- 하단 내비게이션 바 -->
+<!-- 구글검색엔진, 내비게이션 태그의 링크를 찾는다 -->
+<!-- VSC 단축키 : nav > ul > li*4 > a -->
+<!-- 아이콘은 font awesome에서 찾는다 -->
+<!-- 태그이름이랑 class 이름이랑 같아도 상관없다 -->
+<nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
+        <li class="nav__btn"><a class="nav__link" href="chats.html"><span class="nav__notification badge">1</span><i class="far fa-comment fa-2x"></i></a></li>
+        <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
+        <li class="nav__btn"><a class="nav__link" href="more.html"><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
+    </ul>
+</nav>
+
+<div id="no-mobile">
+    <span>Your screen is super big</span>
+</div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

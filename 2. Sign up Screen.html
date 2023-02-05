@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- link :css 엔터치면 윗줄 자동생성 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Talk</title>
+</head>
+<body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
+      <p class="welcome-header__text">
+        If you have a kakao Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <!-- method의 두가지 방식> -->
+    <!-- 1. post -->
+    <!-- 백엔드 서버에 정보를 전송하는 방식 -->
+    <!-- 2. Get -->
+    <!-- 보안에 취약. -->
+    <!-- username이랑 password를 get 방식으로 보내면 안됨. -->
+    <!-- URL에 포함되어도 상관없는 정보만 -->
+    
+    <!-- action -->
+    <!-- 어디로 데이터를 보낼건지, submit버튼을 클릭했을 때 어느 페이지로 이동하는지 -->
+
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number"/>
+      <input name="password" type="password" placeholder="Password"/>
+      <input type="submit" value="Log In"/>
+      <input type="submit" value="Sign Up"/> 
+      <!-- <input> 대신에 <button></button> 이라고 해도 가능 -->
+      <a href="#"> Find Kokoa Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your screen is super big</span>
+    </div>
+    
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

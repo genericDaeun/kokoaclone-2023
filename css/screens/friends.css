@@ -1,0 +1,68 @@
+#friends-display-link {
+    text-align :center;
+    display: block;
+    background-color: #fafafa;
+    padding: 15px 0px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+
+#friends-display-link i{
+    color:rgba(0,0,0,0.3);
+}
+
+.friends-screen{
+    padding: 0px var(horizontal-space);
+}
+
+.friends-screen__channel {
+    margin-top: 25px;
+    border-top: var(--main-border);
+    padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color : rgba (0,0,0, 0.5);
+}
+
+.user-component__column:last-child {
+    color: rgba(0,0,0,0.5);
+}
+
+#splash-screen {
+    background-color: var(--yellow);
+    position: absolute;
+    /* relative인 부모가 아닌 body 기준으로 정렬되길 바람 */
+    /* 모든 것의 위에 위치. 커버 */
+    height: 100vh;
+    /* 화면 높이의 100% */
+    width: 100vw;
+    /* 화면 넓이의 100% */
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 132px;
+    animation:hideSplashScreen 0.4s ease-in-out forwards;
+    /* forwards를 하면 마지막 애니메이션 값을 기억한다 */
+    animation-delay: 2s;
+}
+
+애니메이션
+@keyframes hideSplashScreen {
+    from{
+        opacity:1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        /* visibility hidden 하면 다른 아이콘들을 클릭할 수는 있지만 숨기거나 html을 삭제하고 */
+        /* 싶을때는 사용하면 안된다. */ 
+        뭔가를 숨기거나 html을 삭제하고 싶다 -> javascript
+    }
+}

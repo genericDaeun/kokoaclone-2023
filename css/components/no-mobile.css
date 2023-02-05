@@ -1,0 +1,23 @@
+#no-mobile {
+    position: absolute;
+    /* 모든 것의 위에 오도록 */
+    z-index: 99;
+    /* layer를 가장 앞에 오게 하기 위해서 */
+    height: 100vh;
+    /* 화면 높이만큼 */
+    width:100vw;
+    /* 화면 넓이만큼 */
+    background-color: var(--yellow);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 0;
+    
+}
+
+@media screen and (max-width: 645px) {
+    #no-mobile {
+        display: none;
+    }
+}
